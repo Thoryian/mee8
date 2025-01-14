@@ -2,201 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farewell MEE8</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --text: #b4b9c7;
-            --bg: #0a0b0e;
-            --accent: #1e2028;
-            --primary: #4a5568;
-        }
-
         body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh;
+            margin: 0;
+            background: #0a0b0e;
+            color: #b4b9c7;
+            font-family: "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
-        }
-
-        section {
             min-height: 100vh;
+        }
+        section {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
             padding: 4rem 2rem;
         }
-
-        .content {
-            max-width: 700px;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .loaded .content {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         h1 {
-            font-weight: 300;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            letter-spacing: 0.1em;
             color: #fff;
-            line-height: 1.2;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
         }
-
         p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin: 1.5rem 0;
-            opacity: 0.9;
-            color: var(--text);
+            margin: 1rem 0;
+            font-size: 1.1rem;
         }
-
         .arrow {
             position: fixed;
-            bottom: 6rem;
+            bottom: 5rem;
             left: 50%;
             transform: translateX(-50%);
+            font-size: 1.8rem;
+            color: #b4b9c7;
             opacity: 0.5;
+            cursor: pointer;
             animation: float 3s ease-in-out infinite;
         }
-
-        .arrow i {
-            font-size: 1.8rem;
-            color: var(--text);
-        }
-
         .dev-section {
             margin-top: 3rem;
         }
-
-        .dev-section h2 {
-            color: #fff;
-            font-weight: 300;
-            margin: 3rem 0;
-            font-size: 2rem;
-        }
-
         .dev {
             display: flex;
             align-items: center;
-            gap: 2rem;
-            margin: 2rem 0;
+            gap: 1.5rem;
             padding: 1.5rem;
-            border: 1px solid var(--accent);
+            margin: 1rem 0;
+            border: 1px solid #1e2028;
             border-radius: 16px;
-            text-align: left;
+            background: rgba(30, 32, 40, 0.3);
             text-decoration: none;
             color: inherit;
-            background: rgba(30, 32, 40, 0.3);
         }
-
-        .dev i {
-            font-size: 1.6rem;
+        .dev img {
             width: 4rem;
             height: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--primary);
             border-radius: 50%;
-            color: #fff;
         }
-
         .dev-info {
-            flex: 1;
+            text-align: left;
         }
-
         .dev-name {
+            font-size: 1.2rem;
             font-weight: 500;
             color: #fff;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
         }
-
         .dev-id {
             font-size: 0.9rem;
             opacity: 0.6;
         }
-
         @keyframes float {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(-15px); }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            p {
-                font-size: 1.1rem;
-            }
-
-            .dev {
-                padding: 1.2rem;
-                gap: 1.5rem;
-            }
-
-            .dev i {
-                width: 3.5rem;
-                height: 3.5rem;
-                font-size: 1.4rem;
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
         }
     </style>
 </head>
 <body>
     <section id="top">
-        <div class="content">
-            <h1>MEE8 is no longer with us</h1>
-            <p>Time to find new paths forward</p>
-            <p>Thank you for the memories</p>
-            <div class="arrow" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-                <i class="fas fa-chevron-down"></i>
-            </div>
+        <h1>MEE8 is no longer with us</h1>
+        <p>Time to find new paths forward</p>
+        <p>Thank you for the memories</p>
+        <div class="arrow" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
-
     <section id="about">
-        <div class="content">
-            <h1>About MEE8</h1>
-            <p>MEE8 was a multilingual multipurpose Discord bot designed to be a less paywalled and more feature-rich alternative. The project began in 2023 and saw constant active development until its discontinuation.</p>
-            
-            <div class="dev-section">
-                <h2>Core Developers</h2>
-                <a href="https://discord.com/users/1266530258522345574" target="_blank" class="dev">
-                    <i class="fas fa-user"></i>
-                    <div class="dev-info">
-                        <div class="dev-name">Miri</div>
-                        <div class="dev-id">1266530258522345574</div>
-                    </div>
-                </a>
-                <a href="https://discord.com/users/1067137336674107453" target="_blank" class="dev">
-                    <i class="fas fa-user"></i>
-                    <div class="dev-info">
-                        <div class="dev-name">Whelen (Formerly eYuM)</div>
-                        <div class="dev-id">1067137336674107453</div>
-                    </div>
-                </a>
-            </div>
+        <h1>About MEE8</h1>
+        <p>MEE8 was a multilingual multipurpose Discord bot designed to be a less paywalled and more feature-rich alternative. The project began in 2023 and saw constant active development until its discontinuation.</p>
+        <div class="dev-section">
+            <h2>Core Developers</h2>
+            <a href="https://discord.com/users/1266530258522345574" target="_blank" class="dev">
+                <img src="https://cdn.discordapp.com/avatars/1266530258522345574/d50fe12b09c2a045cfea64b9ec2dcb1d.png?size=512" alt="Miri">
+                <div class="dev-info">
+                    <div class="dev-name">Miri</div>
+                    <div class="dev-id">1266530258522345574</div>
+                </div>
+            </a>
+            <a href="https://discord.com/users/1067137336674107453" target="_blank" class="dev">
+                <img src="https://cdn.discordapp.com/avatars/1067137336674107453/a2e39ca07f02e6a873e60b847d659f10.png?size=512" alt="Whelen">
+                <div class="dev-info">
+                    <div class="dev-name">Whelen (Formerly eYuM)</div>
+                    <div class="dev-id">1067137336674107453</div>
+                </div>
+            </a>
         </div>
     </section>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => document.body.classList.add('loaded'), 300);
