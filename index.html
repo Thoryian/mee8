@@ -10,7 +10,7 @@
             margin: 0;
             background: #0a0b0e;
             color: #b4b9c7;
-            font-family: "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
             min-height: 100vh;
@@ -32,17 +32,6 @@
         p {
             margin: 1rem 0;
             font-size: 1.1rem;
-        }
-        .arrow {
-            position: fixed;
-            bottom: 5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.8rem;
-            color: #b4b9c7;
-            opacity: 0.5;
-            cursor: pointer;
-            animation: float 3s ease-in-out infinite;
         }
         .dev-section {
             margin-top: 3rem;
@@ -76,10 +65,6 @@
             font-size: 0.9rem;
             opacity: 0.6;
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
     </style>
 </head>
 <body>
@@ -87,9 +72,6 @@
         <h1>MEE8 is no longer with us</h1>
         <p>Time to find new paths forward</p>
         <p>Thank you for the memories</p>
-        <div class="arrow" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-            <i class="fas fa-chevron-down"></i>
-        </div>
     </section>
     <section id="about">
         <h1>About MEE8</h1>
