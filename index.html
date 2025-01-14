@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farewell MEE8</title>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/1313640799585435668/5b89f37ddf96bf2dc860ecc90630ef17.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
@@ -66,8 +67,14 @@
             opacity: 0.6;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => document.body.classList.add('loaded'), 300);
+        });
+    </script>
 </head>
 <body>
+    <img src="https://cdn.discordapp.com/avatars/1313640799585435668/5b89f37ddf96bf2dc860ecc90630ef17.png" style="width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1;">
     <section id="top">
         <h1>MEE8 is no longer with us</h1>
         <p>Time to find new paths forward</p>
@@ -79,14 +86,14 @@
         <div class="dev-section">
             <h2>Core Developers</h2>
             <a href="https://discord.com/users/1067137336674107453" target="_blank" class="dev">
-                <img src="https://cdn.discordapp.com/avatars/1067137336674107453/a2e39ca07f02e6a873e60b847d659f10.png?size=512" alt="Whelen">
+                <img src="https://cdn.discordapp.com/avatars/1067137336674107453/a2e39ca07f02e6a873e60b847d659f10.png?size=512">
                 <div class="dev-info">
                     <div class="dev-name">Whelen</div>
                     <div class="dev-id">Founder & Creator</div>
                 </div>
             </a>
             <a href="https://discord.com/users/1266530258522345574" target="_blank" class="dev">
-                <img src="https://cdn.discordapp.com/avatars/1266530258522345574/d50fe12b09c2a045cfea64b9ec2dcb1d.png?size=512" alt="Miri">
+                <img src="https://cdn.discordapp.com/avatars/1266530258522345574/d50fe12b09c2a045cfea64b9ec2dcb1d.png?size=512">
                 <div class="dev-info">
                     <div class="dev-name">Miri</div>
                     <div class="dev-id">Assistant & Hoster</div>
@@ -94,10 +101,5 @@
             </a>
         </div>
     </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => document.body.classList.add('loaded'), 300);
-        });
-    </script>
 </body>
 </html>
