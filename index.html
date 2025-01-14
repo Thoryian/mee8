@@ -5,114 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farewell MEE8</title>
     <link rel="icon" href="https://cdn.discordapp.com/avatars/1313640799585435668/5b89f37ddf96bf2dc860ecc90630ef17.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            background: #0a0b0e;
-            color: #e1e5ed;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        h1 {
-            color: #fff;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-        p {
-            margin: 1rem 0;
-            font-size: 1.1rem;
-        }
-        .dev-section {
-            margin-top: 3rem;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-        .dev-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .dev {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            border: 1px solid #26282f;
-            border-radius: 16px;
-            background: rgba(38, 40, 47, 0.5);
-            text-decoration: none;
-            color: inherit;
-        }
-        .dev img {
-            width: 2.6rem;
-            height: 2.6rem;
-            border-radius: 50%;
-        }
-        .dev-info {
-            text-align: left;
-        }
-        .dev-name {
-            font-size: 1.2rem;
-            color: #fff;
-        }
-        .dev-id {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-gray-300 min-h-screen font-sans antialiased">
+    <div class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-indigo-900/20 to-purple-900/20"></div>
+        
+        <section id="top" class="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="space-y-8 text-center transform transition-all duration-700 ease-out hover:scale-105">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-500 to-indigo-400 tracking-tighter">
+                    MEE8 is no longer with us
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-400 max-w-2xl mx-auto font-light">
+                    Time to find new paths forward
+                </p>
+            </div>
+            <div class="mt-12 animate-bounce text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </div>
+        </section>
+
+        <section id="about" class="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-4xl mx-auto space-y-16">
+                <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-3xl p-8 sm:p-12 shadow-2xl transform transition-all duration-500 hover:shadow-indigo-500/10 hover:-translate-y-1">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-8 text-center">
+                        About MEE8
+                    </h2>
+                    <p class="text-xl text-gray-400 leading-relaxed">
+                        MEE8 was a multilingual multipurpose Discord bot designed to be a less paywalled and more feature-rich alternative. 
+                        The project began in 2023 and saw constant active development until its discontinuation.
+                    </p>
+                </div>
+                
+                <div class="space-y-8">
+                    <h3 class="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
+                        Core Developers
+                    </h3>
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        <a href="https://discord.com/users/1067137336674107453" target="_blank" rel="noopener noreferrer"
+                           class="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-3xl p-6 transform transition-all duration-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://cdn.discordapp.com/avatars/1067137336674107453/a2e39ca07f02e6a873e60b847d659f10.png?size=512" 
+                                     class="w-16 h-16 rounded-2xl ring-2 ring-indigo-500/30 transition-all duration-300 group-hover:ring-indigo-500/50"
+                                     alt="Whelen">
+                                <div>
+                                    <div class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Whelen</div>
+                                    <div class="text-gray-500 group-hover:text-gray-400 transition-colors duration-300">Founder & Creator</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://discord.com/users/1266530258522345574" target="_blank" rel="noopener noreferrer"
+                           class="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl rounded-3xl p-6 transform transition-all duration-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://cdn.discordapp.com/avatars/1266530258522345574/d50fe12b09c2a045cfea64b9ec2dcb1d.png?size=512" 
+                                     class="w-16 h-16 rounded-2xl ring-2 ring-indigo-500/30 transition-all duration-300 group-hover:ring-indigo-500/50"
+                                     alt="Miri">
+                                <div>
+                                    <div class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Miri</div>
+                                    <div class="text-gray-500 group-hover:text-gray-400 transition-colors duration-300">Assistant & Hoster</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const devSection = document.querySelector('.dev-section');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '50px'
+            };
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        devSection.classList.add('visible');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
                     }
                 });
-            }, { threshold: 0.5 });
-            observer.observe(devSection);
+            }, observerOptions);
+
+            document.querySelectorAll('section > div').forEach(el => {
+                el.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
         });
     </script>
-</head>
-<body>
-    <section id="top">
-        <h1>MEE8 is no longer with us</h1>
-        <p>Time to find new paths forward</p>
-        <p>Thank you for the memories</p>
-    </section>
-    <section id="about">
-        <h1>About MEE8</h1>
-        <p>MEE8 was a multilingual multipurpose Discord bot designed to be a less paywalled and more feature-rich alternative. The project began in 2023 and saw constant active development until its discontinuation.</p>
-        <div class="dev-section">
-            <h2>Core Developers</h2>
-            <a href="https://discord.com/users/1067137336674107453" target="_blank" class="dev">
-                <img src="https://cdn.discordapp.com/avatars/1067137336674107453/a2e39ca07f02e6a873e60b847d659f10.png?size=512">
-                <div class="dev-info">
-                    <div class="dev-name">Whelen</div>
-                    <div class="dev-id">Founder & Creator</div>
-                </div>
-            </a>
-            <a href="https://discord.com/users/1266530258522345574" target="_blank" class="dev">
-                <img src="https://cdn.discordapp.com/avatars/1266530258522345574/d50fe12b09c2a045cfea64b9ec2dcb1d.png?size=512">
-                <div class="dev-info">
-                    <div class="dev-name">Miri</div>
-                    <div class="dev-id">Assistant & Hoster</div>
-                </div>
-            </a>
-        </div>
-    </section>
 </body>
 </html>
